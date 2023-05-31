@@ -1,0 +1,12 @@
+host: "localhost:"
+port: "9000"
+address: "localhost:9000"
+time_seconds: "5"
+db:
+  host: "localhost"
+  port: "5438"
+  username: "postgres"
+  password: "qwerty"
+  dbname: "postgres"
+  sslmode: "disable"
+

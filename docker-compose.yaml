@@ -1,0 +1,16 @@
+services:
+  currencyapi:
+    build: ./
+    ports:
+      - 9000:9000
+    depends_on:
+      - db
+  db:
+    restart: always
+    image: postgres:latest
+    volumes:
+      - ./.database/postgres/data:/var/lib/postgresql/data
+    ports:
+      - 5438:5432
+
+
